@@ -1,0 +1,8 @@
+.metadata
+**/bin
+**/.vscode
+**/lib
+*/**/README.md
+**/.classpath
+**/.project
+**/.settings
