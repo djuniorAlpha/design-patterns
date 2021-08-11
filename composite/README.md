@@ -1,0 +1,3 @@
+# Composite
+
+Este exemplo mostra como criar formas gráficas complexas, compostas por formas mais simples e tratar as duas de maneira uniforme.

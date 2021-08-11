@@ -1,18 +1,5 @@
-## Getting Started
+# Command
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+O editor de texto neste exemplo cria novos objetos comando sempre que um usuário interage com ele. Após executar suas ações, um comando é enviado para a pilha do histórico.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Agora, para executar a operação desfazer, o aplicativo obtém o último comando executado do histórico e executa uma ação inversa ou restaura o estado passado do editor, salvo por esse comando.

@@ -1,0 +1,3 @@
+Neste exemplo, o padrão Observer estabelece colaboração indireta entre objetos de um editor de texto. Sempre que o objeto **Editor** é alterado, ele notifica seus assinantes. **EmailNotificationListener** e **LogOpenListener** reagem a essas notificações executando seus comportamentos principais.
+
+As classes de assinante não são acopladas à classe do editor e podem ser reutilizadas em outras aplicações, se necessário. A classe **Editor** depende apenas da interface abstrata do assinante. Isso permite adicionar novos tipos de assinantes sem alterar o código do editor.

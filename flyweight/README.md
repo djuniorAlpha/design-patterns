@@ -1,14 +1,7 @@
-## Getting Started
+# Flyweight
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Neste exemplo, vamos renderizar uma floresta (1.000.000 árvores)! Cada árvore será representada por seu próprio objeto que possui algum estado (coordenadas, textura e assim por diante). Embora o programa faça seu trabalho principal, naturalmente consome muita RAM.
 
-## Folder Structure
+O motivo é simples: muitos objetos árvore contêm dados duplicados (nome, textura, cor). É por isso que podemos aplicar o padrão Flyweight e armazenar esses valores em objetos separados de flyweight (a classe **TreeType**). Agora, em vez de armazenar os mesmos dados em milhares de objetos **Tree**, vamos fazer referência a um dos objetos flyweight com um conjunto específico de valores.
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+O código cliente não notará nada, pois a complexidade da reutilização de objetos flyweight está enterrada dentro de uma fábrica de flyweight.

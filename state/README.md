@@ -1,0 +1,3 @@
+# State
+
+Neste exemplo, o padrão State permite que os mesmos controles do tocador de mídia se comportem de maneira diferente, dependendo do estado atual da reprodução. A classe principal do tocador contém uma referência a um objeto de estado, que executa a maior parte do trabalho para o tocador. Algumas ações podem acabar substituindo o objeto de estado por outro, o que altera a maneira como o tocador reage às interações do usuário.
